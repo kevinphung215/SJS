@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contactstyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <title>SJS</title>
+</head>
+<body>
+    <main>
+        <div class="heading">
+            <img src="./img/logo.png" alt="">
+            <div class="contactInfo">
+                <p>123-456-7890</p>
+                <p>email@gmail.com</p>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <button class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="navLinks" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="video.html">Video Surveillance</a></li>
+                    <li><a href="access.html">Access Control</a></li>
+                    <li><a href="alarms.html">Burglar Alarms</a></li>
+                    <li><a href="cables.html">Structured Cabling</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="bannerContainer">
+            <div class="banner">
+                <div class="bannerText" data-aos="zoom-in" data-aos-duration="3000">
+                    <h1>Contact Us</h1>
+                    <!-- <p>something about video surveillance</p> -->
+                </div>
+            </div>
+        </div>
+
+        <section class="panel1">
+            <ul class="panel1Ul">
+                <li>
+                    Address:
+                    <br>
+                    123 fake street
+                    <br>
+                    city, state, 12345
+                </li>
+                <li>
+                    Office Hours:
+                    <br>
+                    Monday - Friday
+                    <br>
+                    9am - 6pm
+                    <br>
+                    On Call 24/7
+                </li>
+                <li>
+                    Email Address: email@gmail.com
+                </li>
+                <li>
+                    Phone: 123-456-7890
+                </li>
+            </ul>
+
+            <!-- www.formspree.io is email service i used for this -->
+            <div class="panel1Form ">
+                <h2>CONTACT US TODAY FOR A COMPLIMENTARY QUOTE</h2>
+                <div class="formContainer">
+                    <!-- this is location of where the form will go -->
+                    <form action="https://formspree.io/f/xnqwzprw" method="POST" id="my-form">
+                        <div>
+                            <input type="text" placeholder="First Name" class="firstName">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Last Name" class="lastName">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Company Name" class="comapnyName">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Email Address" class="email">
+                        </div>
+                        <div>
+                            <input type="number" placeholder="Phone Number" class="phone">
+                        </div>
+                        <div>
+                            <textarea name="comments" class="comments" cols="15" rows="30" placeholder="Comments"></textarea>
+                        </div>
+                        <button class="formBtn">Submit</button>
+                    </form>
+                </div>
+                <p id="status"></p>
+            </div> 
+        </section>
+
+        <!-- ### Footer ### -->
+
+        <footer>
+            <div class="footerContainer">
+                <div class="footerContact">
+                    <img src="./img/logo.png" alt="">
+                    <p>Licensed | Bonded | Insured | NJ License #000000</p>
+                    <p>123-456-7890</p>
+                    <p>email@gmail.com</p>
+                    <div class="social">
+                        <ul>
+                            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square"></i></a></li>
+                            <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a></li>
+                            <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="footerLinks">
+                    <div class="links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="video.html">Video Surveillance</a></li>
+                            <li><a href="access.html">Access Control</a></li>
+                            <li><a href="alarms.html">Burglar Alarms</a></li>
+                            <li><a href="cables.html">Structured Cabling</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">contact Us</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="serviceAreas">
+                        <h4>Service Areas</h4>
+                        <ul>
+                            <li><a href="#">Marlton</a></li>
+                            <li><a href="#">Essington</a></li>
+                            <li><a href="philadelphia.html">Philadelphia</a></li>
+                            <li><a href="#">City Name</a></li>
+                            <li><a href="#">City Name</a></li>
+                            <li><a href="#">City Name</a></li>
+                            <li><a href="#">City Name</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footerBottom">&copy;2022 Copyright</div>
+        </footer>
+    </main>
+
+    <footer>
+    </footer>
+</body>
