@@ -1,9 +1,11 @@
-@import url(/css/defaultSetting.css);
+@import url(css/defaultSetting.css);
+
+
 
 .banner {
     height: 70vh;
     width: 100%;
-    background: url(/img/contactus.jpg);
+    background: url(img/contactus.jpg);
     object-fit: cover;
     background-attachment: fixed;
     background-position: center;
