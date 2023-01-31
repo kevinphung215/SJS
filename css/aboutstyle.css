@@ -1,0 +1,53 @@
+@import url(/css/defaultSetting.css);
+
+.banner {
+    height: 70vh;
+    width: 100%;
+    background: url(/img/contactus.jpg);
+    object-fit: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bannerText {
+    color: white;
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    font-size: 2.5rem;
+}
+
+.aboutText {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	padding: var(--spacing);
+	margin: auto;
+	font-size: var(--fontSize);
+	line-height: var(--lineHeight);
+	background-color: var(--black);
+	color: var(--white);
+}
+
+.aboutText div {
+	padding: 50px;
+}
+
+.aboutText div i {
+	font-size: 1.4em;
+	line-height: 1.8em
+}
+
+.aboutText div h2 {
+	font-size: 2.2em;
+}
+
+.aboutText div strong {
+	color: orange;
+}
+
+.aboutText div h3 {
+	color: var(--color1);
+}
