@@ -1,11 +1,11 @@
-@import url(css/defaultSetting.css);
+@import url(defaultSetting.css);
 
 
 /* ### Banner ### */
 .banner {
     height: 70vh;
     width: 100%;
-    background: url(img/access2.jpg);
+    background: url(/img/access2.jpg);
     object-fit: cover;
     background-attachment: fixed;
     background-position: center;
@@ -14,9 +14,9 @@
 }
 
 .bannerText {
-    color: white;
     position: absolute;
-    top: 70%;
+    color: white;
+    top: 40%;
     left: 100px;
 }
 
