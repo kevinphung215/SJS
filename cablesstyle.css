@@ -1,89 +1,29 @@
 @import url(/css/defaultSetting.css);
 
-/* ### Carousel ### */
-/* Start */
-
-.carousel {
-	height: 70vh;
-	/* width: 100vw; */
-	position: relative;
+.banner {
+    background: url(/img/fiberoptic.jpg);
+    background-attachment: fixed;
+    background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
 }
-
-.slide {
-	position: absolute;
-	inset: 0;
-	opacity: 0;
-	transition: 200ms opacity ease-in-out;
-	transition-delay: 200ms;
-}
-
-.slide ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.slide > img {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: fill;
-	object-position: center;
-}
-
-/* to enable active slide */
-.slide[data-active] {
-	opacity: 1;
-	transition-delay: 0;
-}
-
-/* carousel buttons */
-.carouselBtn {
-	position: absolute;
-	background: none;
-	border: none;
-	font-size: 4rem;
-	top: 50%;
-	z-index: 2;
-	transform: translateY(-50%);
-	color: rgba(255, 255, 255, 0.5);
-	cursor: pointer;
-	padding: 0 0.5rem;
-	background-color: rgba(0, 0, 0, 0.1);
-}
-
-.carouselBtn:hover,
-.carouselBtn:focus {
-	color: white;
-	background-color: rgba(0, 0, 0, 0.2);
-}
-
-/* focus is used when tabbing to different things for this selected element*/
-.carouselBtn:focus {
-	outline: 1px solid black;
-}
-
-.carouselBtn.prev {
-	left: 1rem;
-}
-
-.carouselBtn.next {
-	right: 1rem;
-}
-/* ### Carousel End ### */
 
 .bannerText {
-	color: white;
-	position: absolute;
-	top: 50%;
-	left: 10%;
-}
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    top: 50%;
+    left: 10%;
 
-.bannerText h1 {
-	font-size: 2.5rem;
 }
 
 /* ### Main ### */
+main {
+    width: 100%;
+}
+
 .panel1 {
 	display: flex;
 	justify-content: space-evenly;
@@ -94,6 +34,7 @@
 	font-size: var(--fontSize);
 	line-height: var(--lineHeight);
 	background: linear-gradient(var(--black), white);
+	overflow: hidden;
 }
 
 .panel1Text {
@@ -179,111 +120,46 @@
 }
 
 .panel2 {
-	text-align: center;
-	width: var(--margin);
+	width: 80%;
 	margin: auto;
-	font-size: var(--fontSize);
-	line-height: var(--lineHeight);
-	padding-top: var(--spacing);
-	padding-bottom: var(--spacing);
+}
+
+.panel2 p {
+	text-align: center;
+	font-size: 1.5rem;
+	padding-top: 50px;
 }
 
 .panel2 h2 {
-	padding-top: var(--spacing);
-	padding-bottom: var(--spacing);
-}
-
-.panel2Text {
-	width: 100%;
-}
-
-.panel2Text img {
-	float: left;
-	max-width: 550px;
-}
-
-.panel2Text p {
-	margin: auto;
-	text-align: justify;
-}
-
-.logo {
-	display: flex;
-	flex-wrap: wrap;
-	width: 80%;
-	margin: auto;
-	justify-content: center;
-	align-items: center;
-	padding-top: var(--spacing);
-	padding-bottom: var(--spacing);
-}
-
-.logo img {
-	width: 150px;
-	height: 100px;
-}
-
-.panel3 {
-	width: 100%;
-	margin: auto;
 	text-align: center;
-	padding-top: var(--spacing);
-	padding-bottom: var(--spacing);
-	font-size: var(--fontSize);
-	line-height: var(--lineHeight);
+	padding-bottom: 30px;
 }
 
-.processText {
+.cableContent {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	/* this is for parallax effect for background-attachment
-    fixed = parallax 
-    scroll = normal */
-	background: url(https://source.unsplash.com/fteR0e2BzKo);
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 300px;
-}
-
-.processText h2 {
-	font-size: 2.5rem;
-	padding-bottom: 15px;
-}
-
-.processText p {
-	margin: 0 5%;
-}
-
-.processWrapper {
-	width: 100%;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	padding-top: var(--spacing);
-	padding-bottom: var(--spacing);
-	margin: auto;
-}
-
-.processWrapper img {
-	width: 150px;
-	height: 150px;
-}
-
-.processWrapper h3 {
-	font-size: 1.5rem;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-.processWrapper p {
-	text-align: justify;
 	width: 80%;
 	margin: auto;
+	align-items: center;
 }
+
+.cableContent img {
+	width: 300px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.title {
+    font-size: var(--title);
+    padding-top: var(--spacing);
+}
+
+.cableUl {
+    line-height: var(--lineHeight);
+    font-size: var(--fontSize);
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
 
 /* ### Footer ### */
 
@@ -326,7 +202,7 @@ footer {
 .footerLinks {
 	display: flex;
 	justify-content: space-around;
-	column-gap: 30px;
+    column-gap: 30px;
 }
 
 .footerBottom {
@@ -354,6 +230,20 @@ footer {
 		display: none;
 	}
 
+	.banner {
+		height: 70vh;
+		object-fit: cover;
+		position: relative;
+	}
+	.bannerText {
+		position: absolute;
+		top: 50%;
+		right: 50%;
+    }
+    .bannerText h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
 
 	.navLinks {
 		display: none;
@@ -388,51 +278,26 @@ footer {
 		width: 100%;
 	}
 
-	.panel2 h2 {
-		padding-top: 0;
-		padding-bottom: 0;
-	}
-
-	.panel2Text img {
-		float: none;
-		max-width: 280px;
-	}
-
-	.logo img {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		width: 100px;
-		height: 100px;
-	}
-
-	.processWrapper {
-		display: flex;
+	.cableContent {
 		flex-direction: column;
-		margin: auto;
 	}
-	.processWrapper img {
-		width: 100px;
-		height: 100px;
-		padding-top: 10px;
+	.cableContent h2 {
+		margin: 0;
 	}
 
 	footer {
 		margin-top: 50px;
 	}
-
 	.footerContainer {
 		flex-direction: column;
 	}
-
 	.social ul {
 		justify-content: center;
 	}
-
-	.footerContact {
+	.footerContact,
+    .footerContact p {
 		text-align: center;
 	}
-
 	.footerContainer img {
 		max-width: 200px;
 	}
