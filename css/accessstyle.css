@@ -1,108 +1,5 @@
-@import url(/css/root.css);
+@import url(/css/defaultSetting.css);
 
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-body {
-	height: 100vh;
-	width: 100%;
-	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-ul,
-li,
-a {
-	list-style: none;
-	text-decoration: none;
-}
-
-p {
-	font-size: var(--fontSize);
-	line-height: var(--lineHeight);
-}
-
-.title {
-	font-size: var(--title);
-	padding-top: var(--spacing);
-	padding-bottom: 30px;
-	text-align: center;
-}
-
-/* ### Header ### */
-
-.heading {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0 5%;
-}
-
-.contactInfo p {
-	display: flex;
-	flex-direction: column;
-	line-height: 20px;
-	font-size: 1.2rem;
-}
-
-.navbar {
-	/* position: relative; */
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	background-color: #333;
-	color: rgb(255, 255, 255);
-	position: sticky;
-	top: 0;
-	z-index: 3;
-}
-
-.navLinks ul {
-	display: flex;
-	margin: 0;
-	padding: 0;
-}
-
-.navLinks li {
-	list-style: none;
-}
-
-.navLinks li a {
-	display: block;
-	text-decoration: none;
-	color: white;
-	padding: 1rem;
-}
-
-.navLinks li:hover {
-	background-color: #555;
-}
-
-/* ### Hamburger Menu ### */
-
-.hamburger {
-	/* position: absolute; */
-	background-color: transparent;
-	color: white;
-	border: 0;
-	font-size: 1rem;
-	cursor: pointer;
-	display: none;
-	padding: 1rem;
-	/* move hamburger to right */
-	margin-left: auto;
-}
-
-.hamburger:focus {
-	outline: none;
-}
 
 /* ### Banner ### */
 .banner {
@@ -139,6 +36,13 @@ main {
     width: 100%;
 }
 
+.title {
+	font-size: var(--title);
+	padding-top: var(--spacing);
+	padding-bottom: 30px;
+	text-align: center;
+}
+
 .panel1 {
 	display: flex;
 	justify-content: space-evenly;
@@ -148,7 +52,7 @@ main {
 	margin: auto;
 	font-size: var(--fontSize);
 	line-height: var(--lineHeight);
-	background: linear-gradient(rgb(0, 19, 192), white);
+	background: linear-gradient(var(--black), white);
 	overflow: hidden;
 }
 
@@ -173,6 +77,7 @@ main {
 /* ### Form Container ### */
 
 .panel1Form {
+	flex: 2;
 	width: var(--margin);
 	background: white;
 	border: 1px solid rgba(0, 0, 0, 0.1);
@@ -291,6 +196,7 @@ main {
 	width: var(--margin);
 	margin: auto;
 	text-align: justify;
+	padding-bottom: 100px;
 }
 
 .panel5 img {
@@ -299,106 +205,10 @@ main {
 	margin-left: 20px;
 }
 
-/* ### Footer ### */
-
-footer {
-	margin-top: 50px;
-}
-
-.footerContainer {
-	display: flex;
-	justify-content: space-around;
-	text-transform: capitalize;
-	background-color: rgb(223, 223, 223);
-	padding-top: var(--spacing);
-	padding-bottom: var(--spacing);
-	font-size: var(--fontSize);
-	line-height: var(--lineHeight);
-}
-
-.social ul {
-	display: flex;
-	font-size: 2rem;
-}
-
-.social ul li {
-	padding: 10px;
-}
-
-.social a:hover {
-	color: rgb(34, 34, 252);
-}
-
-.footerContainer h4 {
-	font-size: 1.5rem;
-}
-
-.footerContainer a {
-	color: rgb(51, 51, 51);
-}
-
-.footerLinks {
-	display: flex;
-	justify-content: space-around;
-    column-gap: 30px;
-}
-
-.footerBottom {
-	background-color: rgb(32, 32, 32);
-	color: white;
-	text-align: center;
-	padding: 15px;
-}
 
 /* ### Media ### */
 
 @media all and (max-width: 700px) {
-	:root {
-		--mediaFont: .8rem;
-		--mediaTitle: 1.1rem;
-	}
-	h2 {
-		font-size: var(--mediaTitle);
-	}
-	p {
-		font-size: var(--mediaFont);
-	}
-
-	.heading {
-		display: none;
-	}
-
-	.banner {
-		height: 70vh;
-		object-fit: cover;
-		position: relative;
-	}
-	.bannerText {
-		position: absolute;
-		top: 50%;
-		right: 50%;
-    }
-    .bannerText h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-	.navLinks {
-		display: none;
-		flex-direction: column;
-		width: 100%;
-	}
-	.navLinks.show {
-		display: flex;
-	}
-	.navLinks ul {
-		flex-direction: column;
-		text-align: center;
-	}
-	.hamburger {
-		display: block;
-	}
-
 	.panel1 {
 		flex-direction: column;
 		align-items: center;
@@ -430,22 +240,5 @@ footer {
 		max-width: 280px;
 		float: none;
 		margin-left: 0;
-	}
-
-	footer {
-		margin-top: 50px;
-	}
-	.footerContainer {
-		flex-direction: column;
-	}
-	.social ul {
-		justify-content: center;
-	}
-	.footerContact,
-    .footerContact p {
-		text-align: center;
-	}
-	.footerContainer img {
-		max-width: 200px;
 	}
 }

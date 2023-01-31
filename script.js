@@ -27,7 +27,6 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('show');
 });
 
-
 // this is for www.formspree.io for form email
 var form = document.getElementById("my-form");
     
@@ -61,19 +60,17 @@ async function handleSubmit(event) {
 form.addEventListener("submit", handleSubmit)
 
 
+// for FAQ section 
 // select all documents that has (name of class/id) for each of them if there is multiple. 
 document.querySelectorAll('.faqBtn').forEach(button => {
     //button add event for click and then run this function 
     button.addEventListener('click', () => {
-
         // this will add this class if there isnt one. or remove the class if there is one. 
         button.classList.toggle('faqBtn--active');
     })
 })
 
-
 // this is to change the arrow icons when clicked
-
 let btn = document.querySelectorAll(".faqBtn");
 let icon = btn.querySelectorAll(".fa-arrow-turn-down");
 
@@ -84,7 +81,3 @@ btn.onclick = function() {
         icon.classList.replace("fa-arrow-turn-up", "fa-arrow-turn-down");
     }
 }
-
-
-
-
