@@ -3,7 +3,7 @@
 .banner {
 	height: 80vh;
 	width: 100%;
-	background: url(/img/firealarm2.jpg);
+	background: url(../img/firealarm2.jpg);
 	object-fit: cover;
 	background-attachment: fixed;
 	background-position: center;

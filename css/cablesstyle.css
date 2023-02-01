@@ -1,7 +1,7 @@
 @import url(defaultSetting.css);
 
 .banner {
-    background: url(/img/fiberoptic.jpg);
+    background: url(../img/fiberoptic.jpg);
     background-attachment: fixed;
     background-position: center;
 	background-size: cover;
